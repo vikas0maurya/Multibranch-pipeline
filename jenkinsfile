@@ -7,14 +7,12 @@ pipeline{
 		sh 'echo "This is main branch.."'
 		}
 	}
-
 	stages{
 		stage("sprint1"){
 		steps{
 		sh 'echo "This is sprint1 branch code"'
 		}
 	}
-
 	stages{
 		stage("hotfix"){
 		steps{
