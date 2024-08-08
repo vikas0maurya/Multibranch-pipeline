@@ -1,0 +1,25 @@
+pipeline{
+	agent any
+
+	stages{
+		stage("main"){
+		steps{
+		sh 'echo "This is main branch.."'
+		}
+	}
+
+	stages{
+		stage("sprint1"){
+		steps{
+		sh 'echo "This is sprint1 branch.."'
+		}
+	}
+
+	stages{
+		stage("development"){
+		steps{
+		sh 'echo "This is development branch"'
+		}
+	}
+	}
+}
