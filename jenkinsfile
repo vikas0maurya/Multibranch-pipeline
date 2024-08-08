@@ -4,19 +4,19 @@ pipeline{
 	stages{
 		stage("main"){
 		steps{
-		sh 'echo "This is main branch.."'
+		echo "This is main branch.."
 		}
 	}
 	stages{
 		stage("sprint1"){
 		steps{
-		sh 'echo "This is sprint1 branch code"'
+		echo "This is sprint1 branch code"
 		}
 	}
 	stages{
 		stage("hotfix"){
 		steps{
-		sh 'echo "This is hotfix branch."'
+		echo "This is hotfix branch."
 		}
 	}
 	}
