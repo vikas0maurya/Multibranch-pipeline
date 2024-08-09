@@ -1,23 +1,21 @@
-pipeline{
-	agent any
-
-	stages{
-		stage("main"){
-		steps{
-		sh 'echo "This is main branch.."'
-		}
-	}
-	stages{
-		stage("sprint1"){
-		steps{
-		echo "This is sprint1 branch code"
-		}
-	}
-	stages{
-		stage("hotfix"){
-		steps{
-		echo "This is hotfix branch"
-		}
-	}
-	}
+pipeline {
+    agent any
+    stages {
+        stage(‘main’) {
+            steps {
+                echo ’This is main branch’
+  	 	}
+     	}
+        stage(‘sprint1’) {
+            steps {
+                echo ’This is sprint branch’
+   	   	}
+     	}
+        stage(‘hotfix’) {
+            steps {
+                echo ’This is hot fix branch’
+            }
+        }
+    }
 }
+
